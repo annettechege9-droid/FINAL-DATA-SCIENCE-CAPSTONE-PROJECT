@@ -99,8 +99,7 @@ Develop a PowerPulse dashboard showing historical electricity sales, trends, sea
 | Scikit-learn                | Regression models and performance evaluation          |
 | Jupyter Notebook or VS Code | Development and documentation                         |
 | Excel or CSV                | Initial data inspection and storage                   |
-| Tableau or Power BI         | Interactive dashboard development                     |
-| GitHub                      | Version control and project documentation             |
+ GitHub                      | Version control and project documentation             |
 
 ## 9. Expected Outcomes
 
