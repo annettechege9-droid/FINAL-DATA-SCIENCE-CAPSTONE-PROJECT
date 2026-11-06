@@ -1,0 +1,8 @@
+file,rows,what it contains,decision,evidence / reason
+powerpulse_historical_sales_candidates_2019_2021.csv,36,Monthly sales 2019-2021 + source report,COMBINE,"Unique months, per-row source report"
+powerpulse_historical_2022_2023_candidates.csv,24,Monthly sales 2022-2023 + source,COMBINE,"Unique months, continues the series"
+powerpulse_master_v1_2024-2026.csv,27,Sales 2024-Mar 2026 + generation/imports/exports + verification notes,COMBINE (authoritative),Only file with verification status; wins any overlap
+powerpulse_historical_2019_2023_AUDIT_ONLY.csv,60,Date + sales only,EXCLUDE,Identical copy of the two historical files (identical = True); using it would double-count 60 months
+powerpulse_combined_WORKING_NOT_FINAL.csv,87,Earlier working concatenation,EXCLUDE (superseded),Same sales as the three source files (same = True); loses the source URLs and notes
+powerpulse_anomaly_review.csv,87,"Analysis OUTPUT: change %, YoY %, flags",EXCLUDE (derived),"Derived columns, same sales (same = True); re-computed in this notebook instead"
+powerpulse_historical_verification_register.csv,60,Audit template for 2019-2023,KEEP SEPARATE (metadata),All 60 rows still 'needs_source_check' with no verified value (all unchecked = True)

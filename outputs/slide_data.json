@@ -1,0 +1,761 @@
+{
+ "feb_jan_pct": -5.901331895493489,
+ "feb_jan_perday_pct": 3.26075236531691,
+ "adf_level_stat": 0.6990299900807836,
+ "adf_level_crit5": -2.9014701097664504,
+ "kw_p": 0.00037377516978175427,
+ "pre_growth": 4.159995318173043,
+ "post_growth": 10.616449856169648,
+ "test_cov_80": 0.4222222222222222,
+ "last12": 12034.65,
+ "next12": 12636.3326535034,
+ "next12_adj": 12499.856489492622,
+ "chosen": {
+  "ETS": "ETS_undamped",
+  "SARIMA": "SARIMA_B",
+  "Random forest": "RF_depth3"
+ },
+ "ens": "Ensemble (ETS+SARIMA+LinReg+RF)",
+ "n_obs": 87,
+ "val": [
+  {
+   "model": "Ensemble (ETS+SARIMA+LinReg+RF)",
+   "MAE": 15.93,
+   "RMSE": 19.29,
+   "MAPE": 1.84,
+   "Bias": -1.9,
+   "n": 366,
+   "MASE": 0.41
+  },
+  {
+   "model": "Linear regression",
+   "MAE": 17.89,
+   "RMSE": 21.67,
+   "MAPE": 2.07,
+   "Bias": 3.21,
+   "n": 366,
+   "MASE": 0.46
+  },
+  {
+   "model": "SARIMA",
+   "MAE": 18.95,
+   "RMSE": 23.34,
+   "MAPE": 2.19,
+   "Bias": -2.11,
+   "n": 366,
+   "MASE": 0.48
+  },
+  {
+   "model": "ETS",
+   "MAE": 21.54,
+   "RMSE": 26.83,
+   "MAPE": 2.47,
+   "Bias": 11.24,
+   "n": 366,
+   "MASE": 0.55
+  },
+  {
+   "model": "Seasonal naive + drift",
+   "MAE": 22.39,
+   "RMSE": 27.31,
+   "MAPE": 2.59,
+   "Bias": -9.58,
+   "n": 366,
+   "MASE": 0.57
+  },
+  {
+   "model": "Neural net (MLP)",
+   "MAE": 24.57,
+   "RMSE": 29.37,
+   "MAPE": 2.84,
+   "Bias": -17.37,
+   "n": 366,
+   "MASE": 0.63
+  },
+  {
+   "model": "Naive",
+   "MAE": 27.88,
+   "RMSE": 35.58,
+   "MAPE": 3.19,
+   "Bias": 17.91,
+   "n": 366,
+   "MASE": 0.71
+  },
+  {
+   "model": "Gradient boosting",
+   "MAE": 31.18,
+   "RMSE": 36.55,
+   "MAPE": 3.6,
+   "Bias": -17.76,
+   "n": 366,
+   "MASE": 0.8
+  },
+  {
+   "model": "Random forest",
+   "MAE": 31.47,
+   "RMSE": 37.12,
+   "MAPE": 3.63,
+   "Bias": -19.92,
+   "n": 366,
+   "MASE": 0.8
+  },
+  {
+   "model": "Seasonal naive",
+   "MAE": 32.29,
+   "RMSE": 37.9,
+   "MAPE": 3.69,
+   "Bias": 32.25,
+   "n": 366,
+   "MASE": 0.83
+  }
+ ],
+ "test": [
+  {
+   "model": "SARIMA",
+   "MAE": 43.78,
+   "RMSE": 61.64,
+   "MAPE": 4.3,
+   "Bias": 21.9,
+   "n": 180,
+   "MASE": 1.12
+  },
+  {
+   "model": "Ensemble (ETS+SARIMA+LinReg+RF)",
+   "MAE": 43.82,
+   "RMSE": 61.05,
+   "MAPE": 4.3,
+   "Bias": 34.45,
+   "n": 180,
+   "MASE": 1.12
+  },
+  {
+   "model": "Seasonal naive + drift",
+   "MAE": 44.58,
+   "RMSE": 62.77,
+   "MAPE": 4.39,
+   "Bias": 38.08,
+   "n": 180,
+   "MASE": 1.14
+  },
+  {
+   "model": "Random forest",
+   "MAE": 46.1,
+   "RMSE": 63.34,
+   "MAPE": 4.54,
+   "Bias": 40.62,
+   "n": 180,
+   "MASE": 1.18
+  },
+  {
+   "model": "Gradient boosting",
+   "MAE": 47.99,
+   "RMSE": 64.5,
+   "MAPE": 4.73,
+   "Bias": 38.13,
+   "n": 180,
+   "MASE": 1.23
+  },
+  {
+   "model": "Linear regression",
+   "MAE": 49.24,
+   "RMSE": 65.01,
+   "MAPE": 4.83,
+   "Bias": 49.23,
+   "n": 180,
+   "MASE": 1.26
+  },
+  {
+   "model": "ETS",
+   "MAE": 51.06,
+   "RMSE": 69.23,
+   "MAPE": 5.04,
+   "Bias": 26.07,
+   "n": 180,
+   "MASE": 1.3
+  },
+  {
+   "model": "Neural net (MLP)",
+   "MAE": 52.77,
+   "RMSE": 67.68,
+   "MAPE": 5.2,
+   "Bias": 52.77,
+   "n": 180,
+   "MASE": 1.35
+  },
+  {
+   "model": "Naive",
+   "MAE": 62.84,
+   "RMSE": 77.48,
+   "MAPE": 6.23,
+   "Bias": 42.96,
+   "n": 180,
+   "MASE": 1.61
+  },
+  {
+   "model": "Seasonal naive",
+   "MAE": 85.67,
+   "RMSE": 95.8,
+   "MAPE": 8.52,
+   "Bias": 85.67,
+   "n": 180,
+   "MASE": 2.19
+  }
+ ],
+ "by_h_test": {
+  "ETS": {
+   "1": 36.2,
+   "2": 40.0,
+   "3": 43.3,
+   "4": 50.8,
+   "5": 52.8,
+   "6": 53.3,
+   "7": 54.2,
+   "8": 54.7,
+   "9": 54.9,
+   "10": 50.4,
+   "11": 58.4,
+   "12": 63.7
+  },
+  "Ensemble (ETS+SARIMA+LinReg+RF)": {
+   "1": 34.3,
+   "2": 34.0,
+   "3": 38.2,
+   "4": 40.8,
+   "5": 41.5,
+   "6": 43.8,
+   "7": 45.1,
+   "8": 47.0,
+   "9": 45.0,
+   "10": 48.9,
+   "11": 52.7,
+   "12": 54.6
+  },
+  "Gradient boosting": {
+   "1": 41.2,
+   "2": 40.2,
+   "3": 43.5,
+   "4": 45.5,
+   "5": 46.1,
+   "6": 47.5,
+   "7": 49.4,
+   "8": 48.0,
+   "9": 48.1,
+   "10": 52.3,
+   "11": 55.8,
+   "12": 58.3
+  },
+  "Linear regression": {
+   "1": 41.9,
+   "2": 43.2,
+   "3": 44.7,
+   "4": 46.2,
+   "5": 47.6,
+   "6": 48.9,
+   "7": 50.3,
+   "8": 51.6,
+   "9": 52.8,
+   "10": 54.0,
+   "11": 54.7,
+   "12": 55.0
+  },
+  "Naive": {
+   "1": 51.6,
+   "2": 40.8,
+   "3": 50.8,
+   "4": 59.7,
+   "5": 49.9,
+   "6": 63.6,
+   "7": 62.1,
+   "8": 67.5,
+   "9": 69.8,
+   "10": 70.4,
+   "11": 82.2,
+   "12": 85.7
+  },
+  "Neural net (MLP)": {
+   "1": 49.7,
+   "2": 51.8,
+   "3": 53.3,
+   "4": 54.4,
+   "5": 54.8,
+   "6": 54.4,
+   "7": 54.1,
+   "8": 53.7,
+   "9": 53.7,
+   "10": 52.5,
+   "11": 50.9,
+   "12": 50.0
+  },
+  "Random forest": {
+   "1": 39.1,
+   "2": 40.8,
+   "3": 44.5,
+   "4": 44.8,
+   "5": 43.5,
+   "6": 45.7,
+   "7": 47.8,
+   "8": 48.5,
+   "9": 47.6,
+   "10": 48.9,
+   "11": 50.3,
+   "12": 51.6
+  },
+  "SARIMA": {
+   "1": 34.8,
+   "2": 38.7,
+   "3": 39.3,
+   "4": 45.0,
+   "5": 45.1,
+   "6": 43.9,
+   "7": 46.5,
+   "8": 46.6,
+   "9": 46.4,
+   "10": 42.5,
+   "11": 47.5,
+   "12": 49.3
+  },
+  "Seasonal naive": {
+   "1": 85.7,
+   "2": 85.7,
+   "3": 85.7,
+   "4": 85.7,
+   "5": 85.7,
+   "6": 85.7,
+   "7": 85.7,
+   "8": 85.7,
+   "9": 85.7,
+   "10": 85.7,
+   "11": 85.7,
+   "12": 85.7
+  },
+  "Seasonal naive + drift": {
+   "1": 33.2,
+   "2": 35.7,
+   "3": 38.0,
+   "4": 39.4,
+   "5": 40.2,
+   "6": 42.1,
+   "7": 44.9,
+   "8": 47.7,
+   "9": 49.4,
+   "10": 52.5,
+   "11": 55.0,
+   "12": 56.6
+  }
+ },
+ "by_h_dev": {
+  "ETS": {
+   "1": 15.3,
+   "2": 17.1,
+   "3": 19.7,
+   "4": 22.4,
+   "5": 23.2,
+   "6": 24.2,
+   "7": 21.9,
+   "8": 23.5,
+   "9": 23.9,
+   "10": 24.3,
+   "11": 23.6,
+   "12": 22.0
+  },
+  "Ensemble (ETS+SARIMA+LinReg+RF)": {
+   "1": 13.5,
+   "2": 14.1,
+   "3": 14.7,
+   "4": 15.9,
+   "5": 16.5,
+   "6": 15.2,
+   "7": 15.4,
+   "8": 17.6,
+   "9": 17.8,
+   "10": 17.2,
+   "11": 16.8,
+   "12": 18.1
+  },
+  "Gradient boosting": {
+   "1": 27.3,
+   "2": 30.1,
+   "3": 32.2,
+   "4": 33.2,
+   "5": 32.6,
+   "6": 32.1,
+   "7": 30.1,
+   "8": 32.1,
+   "9": 31.6,
+   "10": 32.9,
+   "11": 30.7,
+   "12": 29.6
+  },
+  "Linear regression": {
+   "1": 17.8,
+   "2": 18.3,
+   "3": 18.6,
+   "4": 19.3,
+   "5": 19.2,
+   "6": 18.2,
+   "7": 17.3,
+   "8": 16.7,
+   "9": 17.5,
+   "10": 17.0,
+   "11": 17.0,
+   "12": 17.0
+  },
+  "Naive": {
+   "1": 24.9,
+   "2": 20.8,
+   "3": 24.3,
+   "4": 24.9,
+   "5": 30.7,
+   "6": 27.1,
+   "7": 31.7,
+   "8": 28.0,
+   "9": 31.9,
+   "10": 29.8,
+   "11": 33.6,
+   "12": 30.8
+  },
+  "Neural net (MLP)": {
+   "1": 23.9,
+   "2": 25.5,
+   "3": 24.5,
+   "4": 25.1,
+   "5": 24.6,
+   "6": 25.5,
+   "7": 25.3,
+   "8": 24.6,
+   "9": 24.2,
+   "10": 23.3,
+   "11": 24.0,
+   "12": 23.9
+  },
+  "Random forest": {
+   "1": 26.8,
+   "2": 27.8,
+   "3": 31.7,
+   "4": 32.9,
+   "5": 33.3,
+   "6": 33.8,
+   "7": 33.4,
+   "8": 33.6,
+   "9": 32.8,
+   "10": 32.6,
+   "11": 30.5,
+   "12": 29.5
+  },
+  "SARIMA": {
+   "1": 16.2,
+   "2": 18.1,
+   "3": 17.4,
+   "4": 19.9,
+   "5": 19.5,
+   "6": 18.6,
+   "7": 16.7,
+   "8": 19.5,
+   "9": 20.7,
+   "10": 20.2,
+   "11": 21.7,
+   "12": 20.6
+  },
+  "Seasonal naive": {
+   "1": 32.8,
+   "2": 32.7,
+   "3": 33.2,
+   "4": 33.2,
+   "5": 33.4,
+   "6": 32.4,
+   "7": 31.8,
+   "8": 31.2,
+   "9": 32.2,
+   "10": 31.4,
+   "11": 31.6,
+   "12": 30.8
+  },
+  "Seasonal naive + drift": {
+   "1": 20.3,
+   "2": 20.3,
+   "3": 20.4,
+   "4": 20.3,
+   "5": 20.6,
+   "6": 22.3,
+   "7": 23.7,
+   "8": 24.7,
+   "9": 24.3,
+   "10": 25.0,
+   "11": 24.1,
+   "12": 25.3
+  }
+ },
+ "forecast": [
+  {
+   "date": "2026-04",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1003.6,
+   "lower_80": 978.6,
+   "upper_80": 1028.5,
+   "lower_90": 965.0,
+   "upper_90": 1042.1,
+   "ensemble_if_MayJun2025_are_one_offs": 999.7
+  },
+  {
+   "date": "2026-05",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1054.8,
+   "lower_80": 1025.9,
+   "upper_80": 1083.7,
+   "lower_90": 1021.3,
+   "upper_90": 1088.3,
+   "ensemble_if_MayJun2025_are_one_offs": 1018.6
+  },
+  {
+   "date": "2026-06",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1104.2,
+   "lower_80": 1072.2,
+   "upper_80": 1136.3,
+   "lower_90": 1059.1,
+   "upper_90": 1149.3,
+   "ensemble_if_MayJun2025_are_one_offs": 1006.2
+  },
+  {
+   "date": "2026-07",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1044.3,
+   "lower_80": 1011.3,
+   "upper_80": 1077.3,
+   "lower_90": 998.3,
+   "upper_90": 1090.3,
+   "ensemble_if_MayJun2025_are_one_offs": 1042.9
+  },
+  {
+   "date": "2026-08",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1058.4,
+   "lower_80": 1029.3,
+   "upper_80": 1087.6,
+   "lower_90": 1015.1,
+   "upper_90": 1101.8,
+   "ensemble_if_MayJun2025_are_one_offs": 1057.1
+  },
+  {
+   "date": "2026-09",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1035.6,
+   "lower_80": 1006.1,
+   "upper_80": 1065.1,
+   "lower_90": 989.9,
+   "upper_90": 1081.3,
+   "ensemble_if_MayJun2025_are_one_offs": 1034.7
+  },
+  {
+   "date": "2026-10",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1053.9,
+   "lower_80": 1022.5,
+   "upper_80": 1085.3,
+   "lower_90": 1009.2,
+   "upper_90": 1098.6,
+   "ensemble_if_MayJun2025_are_one_offs": 1053.7
+  },
+  {
+   "date": "2026-11",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1060.9,
+   "lower_80": 1025.6,
+   "upper_80": 1096.3,
+   "lower_90": 1013.4,
+   "upper_90": 1108.5,
+   "ensemble_if_MayJun2025_are_one_offs": 1060.7
+  },
+  {
+   "date": "2026-12",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1020.5,
+   "lower_80": 985.9,
+   "upper_80": 1055.1,
+   "lower_90": 978.3,
+   "upper_90": 1062.8,
+   "ensemble_if_MayJun2025_are_one_offs": 1020.1
+  },
+  {
+   "date": "2027-01",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1079.2,
+   "lower_80": 1041.9,
+   "upper_80": 1116.5,
+   "lower_90": 1032.3,
+   "upper_90": 1126.1,
+   "ensemble_if_MayJun2025_are_one_offs": 1079.0
+  },
+  {
+   "date": "2027-02",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1026.7,
+   "lower_80": 986.3,
+   "upper_80": 1067.1,
+   "lower_90": 974.6,
+   "upper_90": 1078.8,
+   "ensemble_if_MayJun2025_are_one_offs": 1027.3
+  },
+  {
+   "date": "2027-03",
+   "Ensemble (ETS+SARIMA+LinReg+RF)": 1094.1,
+   "lower_80": 1051.8,
+   "upper_80": 1136.4,
+   "lower_90": 1042.5,
+   "upper_90": 1145.7,
+   "ensemble_if_MayJun2025_are_one_offs": 1099.9
+  }
+ ],
+ "annual": [
+  {
+   "year": 2019,
+   "mean": 739.4,
+   "min": 691.3,
+   "max": 778.1,
+   "count": 12,
+   "growth_vs_prev_year_pct": null
+  },
+  {
+   "year": 2020,
+   "mean": 732.9,
+   "min": 645.3,
+   "max": 778.0,
+   "count": 12,
+   "growth_vs_prev_year_pct": -0.9
+  },
+  {
+   "year": 2021,
+   "mean": 797.5,
+   "min": 742.3,
+   "max": 835.1,
+   "count": 12,
+   "growth_vs_prev_year_pct": 8.8
+  },
+  {
+   "year": 2022,
+   "mean": 834.0,
+   "min": 760.2,
+   "max": 862.0,
+   "count": 12,
+   "growth_vs_prev_year_pct": 4.6
+  },
+  {
+   "year": 2023,
+   "mean": 860.1,
+   "min": 828.3,
+   "max": 885.2,
+   "count": 12,
+   "growth_vs_prev_year_pct": 3.1
+  },
+  {
+   "year": 2024,
+   "mean": 895.8,
+   "min": 854.0,
+   "max": 937.7,
+   "count": 12,
+   "growth_vs_prev_year_pct": 4.2
+  },
+  {
+   "year": 2025,
+   "mean": 982.0,
+   "min": 909.5,
+   "max": 1090.9,
+   "count": 12,
+   "growth_vs_prev_year_pct": 9.6
+  },
+  {
+   "year": 2026,
+   "mean": 1013.9,
+   "min": 964.7,
+   "max": 1055.7,
+   "count": 3,
+   "growth_vs_prev_year_pct": 3.2
+  }
+ ],
+ "seasonal_effect": {
+  "1": 16.9,
+  "2": -29.5,
+  "3": 3.1,
+  "4": -28.0,
+  "5": 2.8,
+  "6": 14.1,
+  "7": 9.6,
+  "8": 12.4,
+  "9": -0.5,
+  "10": 20.4,
+  "11": 6.5,
+  "12": -27.9
+ },
+ "feature_importance": {
+  "yoy_growth_t0": 0.1569,
+  "yoy_growth_t-1": 0.0634,
+  "yoy_growth_t-2": 0.0718,
+  "yoy_growth_mean_6m": 0.2333,
+  "yoy_momentum": 0.0982,
+  "horizon": 0.1662,
+  "month_sin": 0.0865,
+  "month_cos": 0.1237
+ },
+ "sens": [
+  {
+   "model": "SARIMA",
+   "MAE test - reported series": 43.8,
+   "MAE test - sensitivity series": 24.1,
+   "rank (reported)": 1,
+   "rank (sensitivity)": 1
+  },
+  {
+   "model": "ETS",
+   "MAE test - reported series": 51.1,
+   "MAE test - sensitivity series": 28.3,
+   "rank (reported)": 6,
+   "rank (sensitivity)": 2
+  },
+  {
+   "model": "Ensemble (ETS+SARIMA+LinReg+RF)",
+   "MAE test - reported series": 43.8,
+   "MAE test - sensitivity series": 28.7,
+   "rank (reported)": 1,
+   "rank (sensitivity)": 3
+  },
+  {
+   "model": "Seasonal naive + drift",
+   "MAE test - reported series": 44.6,
+   "MAE test - sensitivity series": 29.3,
+   "rank (reported)": 3,
+   "rank (sensitivity)": 4
+  },
+  {
+   "model": "Random forest",
+   "MAE test - reported series": 46.1,
+   "MAE test - sensitivity series": 31.7,
+   "rank (reported)": 4,
+   "rank (sensitivity)": 5
+  },
+  {
+   "model": "Linear regression",
+   "MAE test - reported series": 49.2,
+   "MAE test - sensitivity series": 36.0,
+   "rank (reported)": 5,
+   "rank (sensitivity)": 6
+  },
+  {
+   "model": "Naive",
+   "MAE test - reported series": 62.8,
+   "MAE test - sensitivity series": 47.2,
+   "rank (reported)": 7,
+   "rank (sensitivity)": 7
+  },
+  {
+   "model": "Seasonal naive",
+   "MAE test - reported series": 85.7,
+   "MAE test - sensitivity series": 70.1,
+   "rank (reported)": 8,
+   "rank (sensitivity)": 8
+  }
+ ],
+ "interval_cov": {
+  "1": 0.53,
+  "2": 0.53,
+  "3": 0.53,
+  "4": 0.6,
+  "5": 0.53,
+  "6": 0.6,
+  "7": 0.2,
+  "8": 0.4,
+  "9": 0.33,
+  "10": 0.27,
+  "11": 0.27,
+  "12": 0.27
+ },
+ "mase_scale": 39.134166666666665
+}
